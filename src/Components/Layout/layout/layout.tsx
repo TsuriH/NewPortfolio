@@ -1,5 +1,6 @@
 import { About } from "../About/About";
 import { Header } from "../Header/Header";
+import { MyProjects } from "../MyProjects/MyProjects";
 import "./layout.css";
 
 export function Layout(): JSX.Element {
@@ -12,6 +13,7 @@ export function Layout(): JSX.Element {
 
             <main>
                 <About />
+                <MyProjects />
             </main>
 
         </div>
