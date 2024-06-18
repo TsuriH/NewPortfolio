@@ -8,12 +8,12 @@
 
 :root {
   --blueish-purple: #6F5FFE;
+  --dark-blue: #272F3D;
 }
 
 body {
   height: 100vh;
   width: 100%;
-  background-color: red;
   font-family: "Poppins", sans-serif;
 }
 

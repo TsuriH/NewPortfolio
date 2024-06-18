@@ -1,0 +1,49 @@
+.About {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--dark-blue);
+    height: 100%;
+    padding: 1em;
+    padding-top: 80px;
+}
+
+.About .about_intro {
+    font-size: 1.5rem;
+}
+
+.About .about_intro span {
+    font-weight: bold;
+    color: var(--blueish-purple);
+
+}
+
+.About .about_intro .point {
+    font-weight: bold;
+    color: white;
+}
+
+.About .about_title {
+    text-transform: capitalize;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.About .about_description {
+    padding:0 3em;
+}
+
+.About .about-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--blueish-purple);
+    padding: 0.5em 2em;
+    border-radius: 30px;
+    font-size: 1.2rem;
+
+}

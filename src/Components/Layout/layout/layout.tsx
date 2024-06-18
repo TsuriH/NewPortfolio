@@ -1,3 +1,4 @@
+import { About } from "../About/About";
 import { Header } from "../Header/Header";
 import "./layout.css";
 
@@ -10,8 +11,9 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
+                <About />
             </main>
-            
+
         </div>
     );
 }
