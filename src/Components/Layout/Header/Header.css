@@ -1,0 +1,20 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.Header .logo span{
+    color: var(--blueish-purple);
+}
+
+.Header .hamburger-menu {
+    color: var(--blueish-purple);
+    font-size: 2rem;
+}
