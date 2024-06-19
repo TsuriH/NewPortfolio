@@ -19,6 +19,11 @@ export function MyProjects(): JSX.Element {
                 <div className="project-box">
                     <img src={woman} alt="" />
                 </div>
+                <div className="project-box">
+                    <img src={woman} alt="" />
+                </div>
+                
+                
 
             </div>
         </div>

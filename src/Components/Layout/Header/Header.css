@@ -4,6 +4,11 @@
     align-items: center;
     background-color: var(--dark-blue);
     padding: 1em;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+
 }
 
 .Header .logo {
@@ -12,11 +17,53 @@
     font-size: 2rem;
 }
 
-.Header .logo span{
+.Header .logo span {
     color: var(--blueish-purple);
 }
 
-.Header .hamburger-menu {
-    color: var(--blueish-purple);
-    font-size: 2.5rem;
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 21;
+}
+
+.hamburger-menu div {
+    width: 100%;
+    height: 4px;
+    background-color: var(--blueish-purple);
+    transition: 0.4s;
+}
+
+.hamburger-menu.open .bar1 {
+    transform: rotate(-45deg) translate(-10px, 3px);
+}
+
+.hamburger-menu.open .bar2 {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar3 {
+    transform: rotate(45deg) translate(-15px, -8px);
+}
+
+
+
+.Header .menu-open {
+    color: white;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    left: 0px;
+    padding: 0 1em;
+    background-color: var(--dark-blue);
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  
+    
+
 }

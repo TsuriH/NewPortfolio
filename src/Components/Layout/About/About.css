@@ -1,4 +1,5 @@
 .About {
+    height: 100vh;
     text-align: center;
     color: white;
     display: flex;
@@ -6,9 +7,10 @@
     align-items: center;
     gap: 2.5rem;
     background-color: var(--dark-blue);
-    height: 100%;
     padding: 1em;
-    padding-top: 80px;
+    padding-top: 180px;
+    position: relative;
+    overflow: hidden;
 }
 
 .About .about_intro {
@@ -33,7 +35,7 @@
 }
 
 .About .about_description {
-    padding:0 3em;
+    padding: 0 3em;
 }
 
 .About .about-btn {
@@ -45,5 +47,15 @@
     padding: 0.5em 2em;
     border-radius: 30px;
     font-size: 1.2rem;
+}
 
+.About .mobile-grey-circle {
+    position: absolute;
+    bottom: 0;
+}
+
+.About .mobile-orange-circle {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
 }
