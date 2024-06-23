@@ -17,11 +17,11 @@ export function Header(): JSX.Element {
                 <div className="bar3"></div>
             </div>
 
-            <div className="menu-open" style={{ height: menuIsDisplayed ? "100%" : "0" }}>
-                <p>About</p>
-                <p>My Projects</p>
-                <p>Contact</p>
-            </div>
+            <nav className="menu-open" style={{ height: menuIsDisplayed ? "100%" : "0" }}>
+                <a href="#about" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>About</a>
+                <a href="#projects" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Projects</a>
+                <a href="#contact" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Contact</a>
+            </nav>
         </div>
     );
 }

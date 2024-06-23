@@ -13,9 +13,9 @@ export function Layout(): JSX.Element {
             </header>
 
             <main>
-                <About />
-                <MyProjects />
-                <Contact />
+                <div id="about"><About /></div>
+                <div id="projects"><MyProjects /></div>
+                <div id="contact"><Contact /></div>
             </main>
 
         </div>

@@ -80,13 +80,159 @@
 }
 
 .Contact .mobile-blue-circle {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    left: 50px;
+    right: 130px;
+
 }
 
 .Contact .mobile-small-grey-circle {
-    position: absolute;
-    bottom: 60px;
-    right: 20px;
+    position: relative;
+    bottom: 140px;
+    left: 120px;
+}
+
+
+/* RESPONSIVE */
+
+
+/* 360px */
+@media (max-width:360px) {
+    .Contact .contact_title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-top: 50px;
+        color: white;
+    }
+
+    .Contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+        background-color: var(--dark-grey);
+        width: fit-content;
+        padding: 2em;
+        border-radius: 20px;
+        width: 80%;
+    }
+
+    .Contact form textarea {
+        height: 100px;
+    }
+
+    .Contact form input,
+    .Contact form textarea {
+        border: none;
+        color: var(--grey);
+        width: 100%;
+        font-size: 10px;
+        padding: 1em;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Contact .send-btn {
+        font-size: 10px;
+
+    }
+
+}
+
+/* 375px */
+
+@media (min-width: 361px) and (max-width: 375px) {
+
+    .Contact .contact_title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding-top: 50px;
+        color: white;
+    }
+
+
+    .Contact form input,
+    .Contact form textarea {
+        border: none;
+        color: var(--grey);
+        width: 100%;
+        font-size: 10px;
+        padding: 1em;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Contact form {
+        gap: 1em;
+    }
+
+    .Contact form textarea {
+        height: 100px;
+    }
+
+    .Contact .send-btn {
+        font-size: 10px;
+
+    }
+
+    .Contact .social-icons-container {
+        font-size: 2em;
+
+    }
+
+    .Contact .mobile-blue-circle {
+        position: relative;
+        bottom: 0;
+        right: 100px;
+        bottom: 20px;
+
+    }
+
+    .Contact .mobile-small-grey-circle {
+        position: relative;
+        bottom: 140px;
+        left: 120px;
+    }
+
+}
+
+/* 380-390 */
+
+@media (min-width: 380px) and (max-width: 390px) {
+
+    .Contact .contact_title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-top: 50px;
+        color: white;
+    }
+
+    .Contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2em;
+        background-color: var(--dark-grey);
+        width: fit-content;
+        padding: 2em;
+        border-radius: 20px;
+        width: 80%;
+    }
+
+    .Contact form input,
+    .Contact form textarea {
+        border: none;
+        color: var(--grey);
+        width: 100%;
+        font-size: 15px;
+        padding: 1em;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .Contact .send-btn {
+        font-size: 15px;
+
+    }
+
 }

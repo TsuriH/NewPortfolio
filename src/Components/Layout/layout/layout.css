@@ -8,3 +8,19 @@
 .layout main {
     flex: 1;
 }
+
+#about,
+#projects,
+#contact {
+    scroll-margin-top: 80px;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    #about,
+    #projects,
+    #contact {
+        scroll-margin-top: 0px;
+    }
+
+}

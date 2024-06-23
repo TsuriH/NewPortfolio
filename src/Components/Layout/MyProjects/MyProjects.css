@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--grey);
+    position: relative;
+
     /* ntc when I got more than three projects what should the component do? scrolling down maybe? it's better to see what is the most common thing to do in that case */
 }
 

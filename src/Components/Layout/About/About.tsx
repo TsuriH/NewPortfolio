@@ -19,15 +19,11 @@ export function About(): JSX.Element {
 
             </div>
 
-            <div className="img-cont-1">
-                <img src={mobileOrangeCircle} alt="" 
-                className="mobile-orange-circle" />
-                  <img src={mobileGreyCircle} alt="" className="mobile-grey-circle" />
-            </div>
+            <div className="img-cont">
+                <img src={mobileOrangeCircle} alt="" className="orange-circle" />
 
-            {/* <div className="img-cont-2">
-              
-            </div> */}
+                  <img src={mobileGreyCircle} alt="" className="grey-circle" />
+            </div>
 
         </div>
 
