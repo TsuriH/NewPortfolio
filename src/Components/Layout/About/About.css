@@ -2,14 +2,11 @@
     height: 100vh;
     text-align: center;
     color: white;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     background-color: var(--dark-blue);
     padding-top: 180px;
 }
 
-.About .about_content {
+.About .text-con {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,6 +65,9 @@
     right: 50px;
 }
 
+.About .profile-image-con {
+    display: none;
+}
 
 /* max 375px*/
 
@@ -138,4 +138,57 @@
         top: 120px;
         right: 50px;
     }
+}
+
+
+/* TABLET AND IPADS */
+
+/*768px to 1024px */
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .About {
+        padding-top: 50px;
+    }
+
+    .About .about_content {
+        display: flex;
+        align-items: center;
+        padding: 2em;
+        gap: 1em;
+    }
+
+    .About .text-con {
+        align-items: start;
+        padding: 0px;
+    }
+
+    .About .text-con>* {
+        text-align: start;
+    }
+
+    .About .about_description {
+        padding: 0;
+        
+    }
+
+    .About .profile-image-con {
+        background: var(--dark-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .About .profile-image-con img {
+        height: 80%;
+        width: 80%;
+        
+    }
+
+
+
 }

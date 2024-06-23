@@ -10,7 +10,8 @@
   --blueish-purple: #6F5FFE;
   --dark-blue: #272F3D;
   --grey: #F0EEEA;
-  --dark-grey:#D9D9D9;
+  --dark-grey: #D9D9D9;
+  --dark-black: #1F242D;
 }
 
 body {
@@ -20,12 +21,13 @@ body {
 
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
 
 #root {
   height: 100%;
-  
+
 }
