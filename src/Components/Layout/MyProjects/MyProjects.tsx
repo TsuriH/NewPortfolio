@@ -17,6 +17,7 @@ export function MyProjects(): JSX.Element {
             <img src={points} alt="" className="points" />
             <h2 className="myproject-title">my projects</h2>
             <div className="projects-container">
+                
                 <button><FontAwesomeIcon icon={faArrowRight} className="arrow left" /></button>
 
                 <div className="project-box">
@@ -42,6 +43,7 @@ export function MyProjects(): JSX.Element {
                     </div>
                     <img src={woman} alt="" />
                 </div>
+
                 <button><FontAwesomeIcon icon={faArrowRight} className="arrow right" /></button>
 
             </div>

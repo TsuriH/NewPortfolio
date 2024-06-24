@@ -3,11 +3,16 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--grey);
     position: relative;
+   
 
     /* ntc when I got more than three projects what should the component do? scrolling down maybe? it's better to see what is the most common thing to do in that case */
+}
+
+.MyProjects>* {
 }
 
 
@@ -45,7 +50,7 @@
 
 .MyProjects .project-box {
     height: 200px;
-    width: 300px;
+    width: 100%;
     border-radius: 38px;
     border: 10px white solid;
     display: flex;
@@ -155,12 +160,11 @@
         align-items: center;
         gap: 40px;
         gap: 100px;
-
     }
 
     .MyProjects .project-box {
         height: 662px;
-        width: 321px;
+        max-width: 421px;
         border-radius: 38px;
         border: 5px var(--dark-blue) solid;
         display: flex;

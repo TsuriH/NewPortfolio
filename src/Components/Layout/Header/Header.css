@@ -86,15 +86,14 @@
 }
 
 .Header .blue-circle-header {
-    z-index: 50;
+   
     display: none;
     width: 80px;
     height: 80px;
     background-color: var(--blueish-purple);
     border-radius: 50%;
-    top: 50px;
-    right: 200px;
-    position: absolute;
+    flex-shrink: 0;
+    position: relative;
 
 }
 
@@ -114,7 +113,7 @@
         background-color: var(--dark-blue);
         padding: 1em;
         padding-left: 2em;
-        position: static;
+        position: relative;
         z-index: 30;
         width: 100%;
         box-shadow: none;
@@ -132,6 +131,7 @@
         display: flex;
         flex-direction: row;
         gap: 2em;
+
     }
 
 
@@ -143,6 +143,7 @@
 
     .Header .blue-circle-header {
         display: block;
+        right: 20px;
     }
 
     .Header .orange-circle {
@@ -158,12 +159,11 @@
         justify-content: space-between;
         align-items: center;
         background-color: var(--dark-blue);
-        position: static;
+        position: relative;
         z-index: 30;
         width: 100%;
         box-shadow: none;
         padding: 2rem 10rem;
-
     }
 
     .Header .hamburger-menu {
