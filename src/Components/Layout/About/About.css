@@ -4,6 +4,7 @@
     color: white;
     background-color: var(--dark-blue);
     padding-top: 180px;
+    position: relative;
 }
 
 .About .text-con {
@@ -49,6 +50,7 @@
     border-radius: 30px;
     font-size: 1.2rem;
     font-family: "Poppins";
+    margin-top: 1em;
 }
 
 .About .img-cont {
@@ -67,6 +69,34 @@
 
 .About .profile-image-con {
     display: none;
+}
+
+.About .orange-circle-about-no-tail {
+    z-index: 50;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    top: 500px;
+    right: 950px;
+    position: absolute;
+}
+
+.About .blue-circle-about {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+
+}
+
+.About .grey-circle-about {
+    display: none;
+    position: absolute;
+    right: 1200px;
+    bottom: 0px;
+
 }
 
 /* max 375px*/
@@ -148,19 +178,20 @@
 @media (min-width:768px) and (max-width:1024px) {
 
     .About {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .About .about_content {
         display: flex;
         align-items: center;
         padding: 2em;
-        gap: 1em;
+        gap: 4em;
     }
 
     .About .text-con {
         align-items: start;
         padding: 0px;
+        gap: 2em
     }
 
     .About .text-con>* {
@@ -169,7 +200,7 @@
 
     .About .about_description {
         padding: 0;
-        
+
     }
 
     .About .profile-image-con {
@@ -181,14 +212,102 @@
         width: 250px;
         border-radius: 50%;
         flex-shrink: 0;
+        outline: 1px solid white;
+        outline-offset: 15px;
+
     }
 
     .About .profile-image-con img {
         height: 80%;
         width: 80%;
-        
+
     }
 
 
+
+}
+
+
+/* Desktop and Large screens */
+
+/*  1024px*/
+@media (min-width: 1024px) {
+
+    .About .blue-circle {
+        display: block;
+
+    }
+
+    .About .orange-circle,
+    .About .grey-circle {
+        display: none;
+    }
+
+    .About .blue-circle-about,
+    .About .grey-circle-about {
+        display: block;
+    }
+
+
+    .About {
+        padding-top: 20px;
+        padding: 5rem 12rem;
+    }
+
+    .About .orange-circle-about-no-tail {
+        display: block;
+    }
+
+
+    .About .about_title {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .About .about_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8em;
+        padding-right: 3em
+    }
+
+    .About .text-con {
+        align-items: start;
+        padding: 0px;
+        gap: 2em
+    }
+
+    .About .text-con>* {
+        text-align: start;
+    }
+
+    .About .about_description {
+        padding: 0em;
+        padding-right: 12rem;
+
+    }
+
+    .About .profile-image-con {
+        background: var(--dark-black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        outline: 1px solid white;
+        outline-offset: 25px;
+
+    }
+
+    .About .profile-image-con img {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        bottom: 1.5em;
+
+    }
 
 }

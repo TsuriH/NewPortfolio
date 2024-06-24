@@ -2,13 +2,15 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-
+import orangeCircle from "../../../Images/orange-circle-header.png"
 export function Header(): JSX.Element {
 
     const [menuIsDisplayed, setMenuIsDisplayed] = useState(false)
 
     return (
         <div className="Header">
+            <img src= {orangeCircle} alt="" className="orange-circle"/>
+            <div className="blue-circle-header"></div>
             <p className="logo">TsuriHefer<span>.</span></p>
 
             <div className={`hamburger-menu ${menuIsDisplayed ? 'open' : ''}`} onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>

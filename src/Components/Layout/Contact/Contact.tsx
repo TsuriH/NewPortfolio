@@ -9,6 +9,7 @@ import mobileSmallGreyCircle from "../../../Images/mobile-small-grey-circle.png"
 export function Contact(): JSX.Element {
     return (
         <div className="Contact">
+
             <h2 className="contact_title">contact</h2>
 
             <form action="">
@@ -25,7 +26,7 @@ export function Contact(): JSX.Element {
             </div>
             <img src={mobileBlueCircle} alt="" className="mobile-blue-circle" />
             <img src={mobileSmallGreyCircle} alt="" className="mobile-small-grey-circle" />
-
+            
         </div>
     );
 }
