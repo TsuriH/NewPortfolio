@@ -15,7 +15,17 @@
     color: white;
 }
 
-.Contact form {
+.Contact .communication-hub {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Contact .communication-hub form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,8 +37,8 @@
     width: 80%;
 }
 
-.Contact form input,
-.Contact form textarea {
+.Contact .communication-hub form input,
+.Contact .communication-hub form textarea {
     border: none;
     color: var(--grey);
     width: 100%;
@@ -38,11 +48,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-.Contact form textarea {
+.Contact .communication-hub form textarea {
     height: 200px;
 }
 
-.Contact .send-btn {
+.Contact .communication-hub .send-btn {
     border: none;
     background-color: var(--blueish-purple);
     color: white;
@@ -51,16 +61,45 @@
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    justify-self: flex-start;
+    text-transform: uppercase;
+    width: 50%;
 
 }
 
-.Contact form input::placeholder,
-.Contact form textarea::placeholder {
+.Contact .communication-hub .send-btn:hover {
+    background: white;
+    color: var(--blueish-purple);
+    cursor: pointer;
+
+
+}
+
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1em 2em;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.popup-message p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.Contact .communication-hub form input::placeholder,
+.Contact .communication-hub form textarea::placeholder {
     color: #C3C3C3;
     font-weight: bold;
 }
 
-.Contact .social-icons-container {
+.Contact .communication-hub .social-icons-container {
     color: white;
     font-size: 3em;
     gap: 1em;
@@ -69,26 +108,36 @@
     color: var(--grey)
 }
 
-.Contact .social-icons-container>*:hover {
+.Contact .communication-hub .social-icons-container>*:hover {
     cursor: pointer;
     color: var(--blueish-purple)
 }
 
-.Contact .faSquareWhatsapp {
+.Contact .communication-hub .faSquareWhatsapp {
     background-color: var(--dark-blue);
 }
 
-.Contact .mobile-blue-circle {
+.Contact .communication-hub .mobile-blue-circle {
     position: relative;
     bottom: 0;
     right: 130px;
 
 }
 
-.Contact .mobile-small-grey-circle {
+.Contact .communication-hub .mobile-small-grey-circle {
     position: relative;
     bottom: 140px;
     left: 120px;
+}
+
+
+.Contact .social-icons-container .whatsapp-container p,
+.Contact .social-icons-container .email-container p {
+    display: none;
+}
+
+.Contact .or-word {
+    display: none;
 }
 
 
@@ -104,7 +153,7 @@
         color: white;
     }
 
-    .Contact form {
+    .Contact .communication-hub form {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -116,12 +165,12 @@
         width: 80%;
     }
 
-    .Contact form textarea {
+    .Contact .communication-hub form textarea {
         height: 100px;
     }
 
-    .Contact form input,
-    .Contact form textarea {
+    .Contact .communication-hub form input,
+    .Contact .communication-hub form textarea {
         border: none;
         color: var(--grey);
         width: 100%;
@@ -131,7 +180,7 @@
         font-family: "Poppins", sans-serif;
     }
 
-    .Contact .send-btn {
+    .Contact .communication-hub .send-btn {
         font-size: 10px;
 
     }
@@ -150,8 +199,8 @@
     }
 
 
-    .Contact form input,
-    .Contact form textarea {
+    .Contact .communication-hub form input,
+    .Contact .communication-hub form textarea {
         border: none;
         color: var(--grey);
         width: 100%;
@@ -161,25 +210,26 @@
         font-family: "Poppins", sans-serif;
     }
 
-    .Contact form {
+    .Contact .communication-hub form {
         gap: 1em;
     }
 
-    .Contact form textarea {
+    .Contact .communication-hub form textarea {
         height: 100px;
     }
 
-    .Contact .send-btn {
+    .Contact .communication-hub .send-btn {
         font-size: 10px;
 
     }
 
-    .Contact .social-icons-container {
+    .Contact .communication-hub .social-icons-container {
         font-size: 2em;
 
     }
 
-    .Contact .mobile-blue-circle {
+
+    .Contact .communication-hub .mobile-blue-circle {
         position: relative;
         bottom: 0;
         right: 100px;
@@ -187,7 +237,7 @@
 
     }
 
-    .Contact .mobile-small-grey-circle {
+    .Contact .communication-hub .mobile-small-grey-circle {
         position: relative;
         bottom: 140px;
         left: 120px;
@@ -206,7 +256,7 @@
         color: white;
     }
 
-    .Contact form {
+    .Contact .communication-hub form {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -218,8 +268,8 @@
         width: 80%;
     }
 
-    .Contact form input,
-    .Contact form textarea {
+    .Contact .communication-hub form input,
+    .Contact .communication-hub form textarea {
         border: none;
         color: var(--grey);
         width: 100%;
@@ -229,7 +279,7 @@
         font-family: "Poppins", sans-serif;
     }
 
-    .Contact .send-btn {
+    .Contact .communication-hub .send-btn {
         font-size: 15px;
 
     }
@@ -257,6 +307,74 @@
         width: 100px;
         height: 1px;
         background-color: white;
-    
+
     }
+}
+
+@media (min-width:1024px) {
+
+    .Contact .communication-hub {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+    }
+
+    .Contact .communication-hub .social-icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Contact .communication-hub form {
+        width: 30%;
+
+    }
+
+    .Contact .social-icons-container .whatsapp-container p,
+    .Contact .social-icons-container .email-container p {
+        display: block;
+        font-size: 0.5em;
+
+    }
+
+    .Contact .social-icons-container .whatsapp-container,
+    .Contact .social-icons-container .email-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.3em;
+    }
+
+    .Contact .or-word {
+        display: block;
+        text-transform: uppercase;
+        color: var(--blueish-purple);
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+
+    .Contact .mobile-blue-circle,
+    .Contact .mobile-small-grey-circle {
+        display: none;
+    }
+
+    .Contact .desktop-grey-circle {
+        position: absolute;
+        bottom: 0px;
+        left: 100px;
+    }
+
+    .Contact .desktop-blue-circle {
+
+
+        position: absolute;
+        bottom: 250px;
+        right: 800px;
+
+    }
+
+
+
 }

@@ -20,7 +20,15 @@
     #about,
     #projects,
     #contact {
-        scroll-margin-top: 0px;
+        scroll-margin-top: 80px;
     }
 
+}
+
+@media (min-width: 1024px) {
+    #about,
+#projects,
+#contact {
+    scroll-margin-top: 0px;
+}
 }

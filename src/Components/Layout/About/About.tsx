@@ -24,7 +24,7 @@ export function About(): JSX.Element {
 
                     <p className="about_description">I'm passionate about Front-End, particularly React. having saying that I do backend too. I have a background in motion design and graphic design. in addition to expertise in UX/UI, client relations, and creativity.</p>
 
-                    <button className="about-btn">My Projects</button>
+                    <a href="#contact" className="about-btn">My Projects</a>
                 </div>
 
                 <div className="profile-image-con">
