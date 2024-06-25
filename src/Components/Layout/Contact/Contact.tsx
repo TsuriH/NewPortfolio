@@ -17,7 +17,7 @@ export function Contact(): JSX.Element {
 
     const openWhatsApp = () => {
         const phoneNumber = "972555577521"
-        window.open(`https://wa.me/${phoneNumber}}`, '_blank')
+        window.open(`https://wa.me/${phoneNumber}`, '_blank')
     };
 
     const openEmail = () => {
@@ -34,14 +34,15 @@ export function Contact(): JSX.Element {
         e.preventDefault();
 
         if (form.current) {
-            emailjs.sendForm('service_uahain2', 'service_uahain2', form.current, {
-                publicKey: 'template_fgel099',
+            emailjs.sendForm('service_uahain2', 'template_fgel099', form.current, {
+                publicKey: 'dYvdSl7feRghjrcZz',
             })
                 .then(
                     () => {
                         console.log('SUCCESS!');
                         setMessageSent(true);
                         setTimeout(() => setMessageSent(false), 3000);
+                       form.current?.reset()
                     },
                     (error) => {
                         console.log('FAILED...', error.text);

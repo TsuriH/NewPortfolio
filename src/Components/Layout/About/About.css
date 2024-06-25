@@ -4,14 +4,12 @@
     color: white;
     background-color: var(--dark-blue);
     padding-top: 180px;
-    position: relative;
 }
 
 .About .text-con {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     padding: 0 1em;
 }
@@ -41,30 +39,24 @@
 }
 
 .About .about-btn {
-    background: none;
-    border: none;
     color: white;
     font-weight: bold;
     background-color: var(--blueish-purple);
     padding: 0.5em 2em;
     border-radius: 30px;
     font-size: 1.2rem;
-    font-family: "Poppins";
     margin-top: 1em;
     text-decoration: none;
 }
 
 .About .img-cont {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
     display: flex;
     align-items: center;
 }
 
 .About .grey-circle {
     position: relative;
-    top: 120px;
+    top: 150px;
     right: 50px;
 }
 
@@ -73,32 +65,16 @@
 }
 
 .About .orange-circle-about-no-tail {
-    z-index: 50;
     display: none;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    top: 500px;
-    right: 950px;
-    position: absolute;
-}
-
-.About .blue-circle-about {
-    display: none;
-    position: absolute;
-    right: 0px;
-    bottom: 100px;
 
 }
 
-.About .grey-circle-about {
+.About .blue-circle-about, .About .grey-circle-about {
     display: none;
-    position: absolute;
-    right: 1200px;
-    bottom: 0px;
 
 }
+
+/* Responsive Breakpoints */
 
 /* max 375px*/
 
@@ -152,14 +128,6 @@
 
 }
 
-/* max 430px */
-
-@media (min-width: 380px) and (max-width: 430px) {
-    .About .grey-circle {
-        top: 150px
-    }
-}
-
 /* max 360 */
 
 @media (max-width: 360px) {
@@ -170,7 +138,6 @@
         right: 50px;
     }
 }
-
 
 /* TABLET AND IPADS */
 
@@ -234,6 +201,12 @@
 /*  1024px*/
 @media (min-width: 1024px) {
 
+    .About {
+        position: relative;
+        padding: 5rem 10rem;
+
+    }
+
     .About .blue-circle {
         display: block;
 
@@ -244,19 +217,31 @@
         display: none;
     }
 
-    .About .blue-circle-about,
-    .About .grey-circle-about {
+    .About .blue-circle-about {
         display: block;
+        position: absolute;
+        right: 0px;
+        bottom: 100px;
     }
 
+    .About .grey-circle-about {
+        display: block;
+        position: absolute;
+        right: 1200px;
+        bottom: 0px;
 
-    .About {
-        padding-top: 20px;
-        padding: 5rem 12rem;
     }
 
     .About .orange-circle-about-no-tail {
         display: block;
+        z-index: 50;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        top: 500px;
+        right: 950px;
+        position: absolute;
     }
 
 
