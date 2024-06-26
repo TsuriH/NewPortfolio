@@ -7,13 +7,9 @@ export function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <img src= {orangeCircle} alt="" className="orange-circle"/>
-            <p className="logo">TsuriHefer<span>.</span></p>
 
-            <div className={`hamburger-menu ${menuIsDisplayed ? 'open' : ''}`} onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-                <div className="bar3"></div>
+            <div className="logo-wrapper">
+                <p className="logo">TsuriHefer<span>.</span></p>
             </div>
 
             <nav className="menu-open" style={{ height: menuIsDisplayed ? "100%" : "0" }}>
@@ -21,7 +17,20 @@ export function Header(): JSX.Element {
                 <a href="#projects" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Projects</a>
                 <a href="#contact" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Contact</a>
             </nav>
-            <div className="blue-circle-header"></div>
+
+            <div className="nav_circles">
+                <img src={orangeCircle} alt="" className="orange-circle" />
+                <div className="blue-circle-header"></div>
+            </div>
+
+
+            <div className={`hamburger-menu ${menuIsDisplayed ? 'open' : ''}`} onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
+            </div>
+
+
         </div>
     );
 }
