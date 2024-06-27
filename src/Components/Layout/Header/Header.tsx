@@ -9,10 +9,10 @@ export function Header(): JSX.Element {
         <div className="Header">
 
             <div className="logo-wrapper">
-                <p className="logo">TsuriHefer<span>.</span></p>
+                <p className="logo">TsuriHeffer<span>.</span></p>
             </div>
-
-            <nav className="menu-open" style={{ height: menuIsDisplayed ? "100%" : "0" }}>
+            {/* mobile menu */}
+            <nav className="menu-open" style={{ height: menuIsDisplayed ? "140%" : "0" }}>
                 <a href="#about" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>About</a>
                 <a href="#projects" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Projects</a>
                 <a href="#contact" onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>Contact</a>
@@ -23,7 +23,7 @@ export function Header(): JSX.Element {
                 <div className="blue-circle-header"></div>
             </div>
 
-
+            {/* mobile-menu-button */}
             <div className={`hamburger-menu ${menuIsDisplayed ? 'open' : ''}`} onClick={() => setMenuIsDisplayed(!menuIsDisplayed)}>
                 <div className="bar1"></div>
                 <div className="bar2"></div>

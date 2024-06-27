@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--dark-blue);
-    padding: 0 50px;
+    padding: 0 20px;
     position: fixed;
     z-index: 20;
     width: 100%;
@@ -51,23 +51,6 @@
     transform: rotate(45deg) translate(-15px, -8px);
 }
 
-.Header .menu-open {
-    color: white;
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    left: 0px;
-    padding: 0 1em;
-    background-color: var(--dark-blue);
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.2em;
-
-}
-
 .Header .menu-open a {
     background: none;
     color: white;
@@ -81,12 +64,13 @@
     cursor: pointer;
 }
 
-/* .Header .orange-circle {
+.Header .orange-circle {
     display: none;
-} */
+
+
+}
 
 .Header .blue-circle-header {
-
     display: none;
     width: 60px;
     height: 60px;
@@ -95,7 +79,16 @@
     border-radius: 50%;
     flex-shrink: 0;
     position: relative;
+}
 
+.Header .menu-open {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    height: 0%;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
 }
 
 
@@ -144,16 +137,14 @@
 
     .Header .blue-circle-header {
         display: block;
-        /* right: 20px; */
     }
 
-    /* .Header .orange-circle {
+    .Header .orange-circle {
         display: block;
-        position: absolute;
-        top: 0px;
-        left: 1000px;
-        z-index: 30;
-    } */
+        z-index: 1;
+        position: relative;
+        bottom: 20px;
+    }
 
     .Header {
         display: flex;
@@ -164,7 +155,7 @@
         z-index: 30;
         width: 100%;
         box-shadow: none;
-        padding: 0 50px;
+        padding: 20px 140px;
     }
 
     .Header .hamburger-menu {
@@ -181,15 +172,15 @@
         background-color: var(--dark-blue);
         display: flex;
         flex-direction: row;
-        margin-left: 1rem;
+        margin-left: 7rem;
         width: 70%;
+
     }
 
     .Header .logo {
         color: white;
         font-weight: bold;
         font-size: 3.5rem;
-
     }
 
     .menu-open>* {
@@ -201,9 +192,8 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        position: relative;
+        z-index: 90;
     }
-
-
-
 
 }

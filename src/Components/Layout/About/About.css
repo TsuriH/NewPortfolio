@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: flex-start;
     gap: 20px;
     padding: 0 1em;
 }
@@ -60,7 +61,7 @@
     right: 50px;
 }
 
-.About .profile-image-con {
+.About .visual-side {
     display: none;
 }
 
@@ -69,7 +70,8 @@
 
 }
 
-.About .blue-circle-about, .About .grey-circle-about {
+.About .blue-circle-about,
+.About .grey-circle-about {
     display: none;
 
 }
@@ -219,16 +221,18 @@
 
     .About .blue-circle-about {
         display: block;
-        position: absolute;
-        right: 0px;
-        bottom: 100px;
+        position: relative;
+        align-self: flex-end;
+        position: relative;
+        left: 160px;
+        bottom: 20px;
     }
 
     .About .grey-circle-about {
         display: block;
-        position: absolute;
-        right: 1200px;
-        bottom: 0px;
+        position: relative;
+        left: 250px;
+        top: 100px;
 
     }
 
@@ -255,13 +259,14 @@
         align-items: center;
         justify-content: center;
         gap: 8em;
-        padding-right: 3em
+        padding-right: em
     }
 
     .About .text-con {
         align-items: start;
+        justify-content: start;
         padding: 0px;
-        gap: 2em
+        gap: 2em;
     }
 
     .About .text-con>* {
@@ -270,23 +275,27 @@
 
     .About .about_description {
         padding: 0em;
-        padding-right: 12rem;
+        padding-right: 20rem;
 
     }
 
     .About .profile-image-con {
         background: var(--dark-black);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 500px;
         width: 500px;
+        justify-content: center;
         border-radius: 50%;
         flex-shrink: 0;
         outline: 1px solid white;
         outline-offset: 25px;
 
     }
+
+    .About .visual-side {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .About .profile-image-con img {
         height: 100%;
