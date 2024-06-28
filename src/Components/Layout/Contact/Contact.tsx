@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Contact.css";
 import { faLinkedin, faSquareWhatsapp, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import mobileBlueCircle from "../../../Images/mobile-blue-circle.png"
-import mobileSmallGreyCircle from "../../../Images/mobile-small-grey-circle.png"
 import greyCircleContact from "../../../Images/grey-circle-contact.png"
 import blueCircleContact from "../../../Images/blue-circle-contact.png"
 import React, { useRef, useState } from 'react';
@@ -42,7 +40,7 @@ export function Contact(): JSX.Element {
                         console.log('SUCCESS!');
                         setMessageSent(true);
                         setTimeout(() => setMessageSent(false), 3000);
-                       form.current?.reset()
+                        form.current?.reset()
                     },
                     (error) => {
                         console.log('FAILED...', error.text);
@@ -70,6 +68,7 @@ export function Contact(): JSX.Element {
                 <p className="or-word">or</p>
 
                 <div className="social-icons-container">
+
                     <div className="whatsapp-container" onClick={openWhatsApp} style={{ cursor: 'pointer' }}>
                         <p> 055 557 7521</p>
                         <FontAwesomeIcon icon={faWhatsapp} />
@@ -77,18 +76,20 @@ export function Contact(): JSX.Element {
 
                     <div className="email-container" onClick={openEmail} style={{ cursor: 'pointer' }}>
                         <p>tsuri.he@gmail.com</p>
-                        <FontAwesomeIcon icon={faEnvelope}  />
+                        <FontAwesomeIcon icon={faEnvelope} />
                     </div>
-                    <FontAwesomeIcon icon={faLinkedin} onClick={openLinkedIn} style={{ cursor: 'pointer' }}/>
+
+                    <div className="linkedin-container">
+                        <FontAwesomeIcon icon={faLinkedin} onClick={openLinkedIn} style={{ cursor: 'pointer' }} />
+                        <img src={blueCircleContact} alt="" className="desktop-blue-circle" />
+                    </div>
+
                 </div>
 
             </div>
 
-            <img src={blueCircleContact} alt="" className="desktop-blue-circle" />
             <img src={greyCircleContact} alt="" className="desktop-grey-circle" />
-
-            <img src={mobileBlueCircle} alt="" className="mobile-blue-circle" />
-            <img src={mobileSmallGreyCircle} alt="" className="mobile-small-grey-circle" />
+                
 
         </div>
     );

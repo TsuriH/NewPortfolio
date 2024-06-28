@@ -11,7 +11,7 @@ export function About(): JSX.Element {
     return (
 
         <div className="About">
-            <div className="orange-circle-about-no-tail"></div>
+
             <div className="about_content">
 
                 <div className="text-con">
@@ -21,9 +21,12 @@ export function About(): JSX.Element {
                     <h1 className="about_title">a full stack <br></br>web developer</h1>
 
                     <p className="about_description">I'm passionate about Front-End, particularly React. having saying that I do backend too. I have a background in motion design and graphic design. in addition to expertise in UX/UI, client relations, and creativity.</p>
+                    <div className="my-project-btn-cont">
+                        <a href="#projects" className="about-btn">My Projects</a>
+                        <div className="orange-circle-about-no-tail"></div>
 
-                    <a href="#projects" className="about-btn">My Projects</a>
-                    
+                    </div>
+
                     <img src={greyCircle} alt="" className="grey-circle-about" />
 
                 </div>
@@ -37,12 +40,10 @@ export function About(): JSX.Element {
                     <img src={blueCircle} alt="" className="blue-circle-about" />
                 </div>
 
-
             </div>
 
             <div className="img-cont">
                 <img src={mobileOrangeCircle} alt="" className="orange-circle" />
-
                 <img src={mobileGreyCircle} alt="" className="grey-circle" />
             </div>
 

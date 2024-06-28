@@ -46,7 +46,6 @@
     padding: 0.5em 2em;
     border-radius: 30px;
     font-size: 1.2rem;
-    margin-top: 1em;
     text-decoration: none;
 }
 
@@ -230,9 +229,11 @@
 
     .About .grey-circle-about {
         display: block;
-        position: relative;
-        left: 250px;
-        top: 100px;
+        left: 400px;
+        bottom: 0px;
+        width: calc(14vw - 40px);
+        position: absolute;
+      
 
     }
 
@@ -243,15 +244,13 @@
         height: 40px;
         background-color: white;
         border-radius: 50%;
-        top: 500px;
-        right: 950px;
-        position: absolute;
     }
 
 
     .About .about_title {
-        font-size: 5rem;
-        line-height: 5rem;
+        /* font-size: 5rem; */
+        font-size:5.2vw;
+        line-height: 5vw;
     }
 
     .About .about_content {
@@ -275,7 +274,7 @@
 
     .About .about_description {
         padding: 0em;
-        padding-right: 20rem;
+        padding-right: 10rem;
 
     }
 
@@ -302,6 +301,16 @@
         width: 100%;
         position: relative;
         bottom: 1.5em;
+
+    }
+
+    .About .my-project-btn-cont {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 3em;
 
     }
 
